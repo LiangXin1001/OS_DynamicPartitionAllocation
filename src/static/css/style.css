@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    /* background-color:  rgba(255, 245, 247, 0.742);; */
+}
+.title {
+    text-align: center;
+}
+/* 本项目颜色设计：主色调 rgb(245, 204, 218);淡粉
+ rgb(137,123,130); 冷棕 rgb(170,120,137);红棕 rgb(52,32,48);黑
+  rgb(254,212,149); 黄  rgb(140,161,183);蓝   rgb(27,96,124);深蓝 */
+
+#myForm {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#myForm input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#myForm input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color:  rgb(137,123,130);
+    ;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#myForm input[type="submit"]:hover {
+    background-color:  rgb(94, 71, 73); 
+    ;
+}
+
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    /* 默认值，可以省略 */
+    justify-content: space-between;
+    /* 可选，使得两个盒子在两端 */
+}
+
+.left_box {
+    width: 60%;
+    box-sizing: border-box;
+    border-left: 10px;
+}
+
+.right_box {
+    width: 40%;
+    box-sizing: border-box;
+    border-right: 10px;
+}
+
+
+
+/*中部链式内存样式*/
+.memory {
+    margin-top: 5%;
+    height: 100px;
+    width: 200px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    position: relative;
+}
+
+/*内存中的每一个作业*/
+.memory-proj {
+    margin-top: 1px;
+    background-color: rgb(111, 120, 172);
+    height: 98px;
+    width: 100px;
+    position: absolute;
+}
+
+
+/*下拉框*/
+.model-box {
+    position: relative;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    border: 1px solid rgb(140, 161, 183);
+    /* #e4e4e4; */
+    border-radius: 3px;
+    text-indent: 5px;
+}
+
+
+
+.container {
+    width: 60%;
+    /* margin: 3% 16%; */
+    margin-left: 40px;
+}
+
+.algorithm {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.algorithm div {
+    margin-bottom: 5px;
+}
+
+.model-box {
+    position: relative;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.model-select-text {
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.model-select-option {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.model-select-option li {
+    padding: 10px;
+    cursor: pointer;
+    list-style-type: none; /* Removes the bullet points */
+}
+
+.model-select-option li:hover {
+    background-color: #f0ecec;
+}
+
+
+.btn {
+    border-color: rgb(254,212,149);
+    background-color: rgb(254,212,149);
+    height: 45px;
+    width: 70px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.clear-btn .btn {
+    border-color: rgb(140,161,183);
+    background-color: rgb(140,161,183);
+    margin-top: 20px;
+}
+
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(245, 204, 218);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(242, 174, 197);
+}
+
+.clear-btn .btn {
+    background-color: rgb(140,161,183);
+}
+
+.clear-btn .btn:hover {
+    background-color: rgb(120,141,163);
+}
+
+
+/*下拉框中待选文字*/
+/* .model-box .model-select-text {
+    position: relative;
+    width: 100%;
+    height: 28px;
+    color: #666;
+    text-indent: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.model-box .model-select-text:after {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 10px 8px 0;
+    border-style: solid;
+    border-color: #666 transparent transparent;
+}
+
+.model-box .model-select-option {
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    display: none;
+    list-style: none;
+    border: 1px solid #e4e4e4;
+    border-top: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #fff;
+}
+
+.model-box .model-select-option li {
+    height: 28px;
+    line-height: 28px;
+    color: #333;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.model-box .model-select-option li:hover {
+    background-color: #f3f3f3;
+}
+
+.model-box .model-select-option li.seleced {
+    background-color: #f3f3f3;
+} */
+
+
+.disable {
+    pointer-events: none;
+}
